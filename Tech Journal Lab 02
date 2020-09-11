@@ -1,0 +1,11 @@
+Read previous Lab notes before doing anything here
+We've started to use the Server, noted as ad01. The base settings are fine but change the network to the LAN and make sure the firewall is running.
+After server manager is invoked, set the ipv4 settings to the following: 
+IP Address:  10.0.5.5
+Netmask: 255.255.255.0
+Gateway 10.0.5.2
+DNS 10.0.5.2
+(The gateway and DNS are both in the same location.)
+Rename, Reboot.
+In server roles, give yourself ADDS. ADDS allows us full control over data management and anyone on our network.
+ADDS should work as long as we're connected to a DNS. If we're somehow NOT connected to one, there's a pretty major issue already.
