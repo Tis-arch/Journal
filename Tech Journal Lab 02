@@ -12,7 +12,7 @@ ADDS should work as long as we're connected to a DNS. If we're somehow NOT conne
 DNS Zones must then be created in the DNS manager, for both the firewall and the active directory.
 Add user to domain admin group, allowing remote management of the domain.
 Somewhere between the last lab and this one, the workstation changed and there's no network connection. I've tested what the problem could be extensively aside from the fact that it's failing to resolve and got nowhere so far.
-
+Found the problem, I needed to input some ips regarding the domain to make sure it could find it first.
 Major Definitions:
 DNS: Known as the Domain Name System, it's what connects computers to IPs through networks and multiple links
 ADDS: Known as the Active Directory Domain Services a server role in Active Directory that allows admins to manage and store information about resources from a network.
