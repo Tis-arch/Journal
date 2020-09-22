@@ -1,0 +1,6 @@
+Lab 03 Linux Configuration
+Put the DHCP on the LAN. This allows general connectivity with everything else.
+After logging in, launch NMTUI. Edit the connection. Picture is bundled with deliverable.
+Exit, then restart network using systemctl restart network. Then, exit that, log back in to see the new host name.
+Add a user by typing useradd name and then passwd name. Make them a local admin by typing usermod -aG wheel name.
+This lab had an ass load of new commands to explore
