@@ -3,4 +3,9 @@ Put the DHCP on the LAN. This allows general connectivity with everything else.
 After logging in, launch NMTUI. Edit the connection. Picture is bundled with deliverable.
 Exit, then restart network using systemctl restart network. Then, exit that, log back in to see the new host name.
 Add a user by typing useradd name and then passwd name. Make them a local admin by typing usermod -aG wheel name.
-This lab had an ass load of new commands to explore
+After creating a record, I had to do a lot of fiddling to make the ssh work with the hostname. Restarts, analyzing both the A and PTR versions, and even using different ssh clients.
+  Powershell ISE didn't work at all, Powershell let me look at the dhcp, but wouldn't take my password, leaving PuTTY to save my life there.
+This lab had an ass load of new commands to explore, since I'm decently new to Linux.
+  If I were someone who had to manage the profiles of people entering and leaving a company, cleaning their data off of computers, I suspect chown would be useful. Being able to change ownership I've found is a crucial thing to have if your position is moderating others.
+  As long as I'm connected to the internet, wget will also prove handy. There's too many downloads that add more stuff to linux, and with wget I can just nab it from the terminal.
+  For security in general, echo seems like a neat thing I'd wanna try in a later lab. I remember doing steganography last year with something like echo, and I wanna see how it can be used in a real situation.
