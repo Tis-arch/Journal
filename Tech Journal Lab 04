@@ -1,0 +1,13 @@
+Firstly, I downloaded PuTTY on my AD01 computer. I had to first disable IE ESC via the Local Server settings. I personally use this over Powershell because I've had multiple problems with it in the past, but none with PuTTY.
+Using sudo yum install dhcp, we install... dhcp.
+Open the config file in nano, default directory is /etc/dhcp/dhcpd.conf
+Assign subnet, netmask, gateways and the like. If you don't know what you wanna config to already, use the man page.
+Use systemctl start dhcpd as root to start the DHCP.
+Next, we gotta configure the firewall to allow IMCP and SSH requests.
+To see what we need to add, invoke firewall-cmd --list-all.
+Always add --permanent to ensure you save changes.
+Add the DHCP to the services using firewall-cmd --add-service=dhcp -- permanent.
+Reload using firewall cmd--reload to ensure it goes through.
+Bring the list up one more time, to make sure it's there.
+We changed to a static IP earlier, time to change that. In workstation, to make sure it works, set your IPs to automatic.
+If all goes well, check ipconfig /all and make sure there's a listing that says DCHP Servers.
