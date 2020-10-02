@@ -1,0 +1,5 @@
+To make sure I still had access throughout, I logged in both with an ssh and directly.
+Entered the ssh root login config document, via vi /etc/ssh/sshd_config
+Change #permitRootLogin from yes to no
+...that's it
+really
