@@ -11,3 +11,6 @@ Reload using firewall cmd--reload to ensure it goes through.
 Bring the list up one more time, to make sure it's there.
 We changed to a static IP earlier, time to change that. In workstation, to make sure it works, set your IPs to automatic.
 If all goes well, check ipconfig /all and make sure there's a listing that says DCHP Servers.
+
+After initiating release, everything got screwed up. Reset back to static and restared stuff and did a bit of modification, I found it was a DHCP issue.
+Had to reactivate the DHCP after releasing.
