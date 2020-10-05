@@ -3,3 +3,5 @@ Use a strong password generator for the passwords. Make a log of the passwords s
 To create groups to add them to, use groupadd name.
 Add them using usermod -aG groupname username.
 MAKE DIRECTORIES FOR EACH GROUP MADE.
+Use chgrp directory to make a directory modifiable by a group.
+Chmod works like this. x-yyy, x can be u for user, g for group, or o for other. y can be r for read, w for write and x for execute.
