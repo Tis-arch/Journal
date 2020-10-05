@@ -1,0 +1,5 @@
+Firstly you gotta make sure you have new users, made using the root account. useradd name and passwd name.
+Use a strong password generator for the passwords. Make a log of the passwords somewhere secure, and encrypt the file or keep it away from any networks.
+To create groups to add them to, use groupadd name.
+Add them using usermod -aG groupname username.
+MAKE DIRECTORIES FOR EACH GROUP MADE.
