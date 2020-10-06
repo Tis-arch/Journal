@@ -1,0 +1,9 @@
+For this lab, we're making a new OU structure for our AD.
+Under ADDS> Users and Computers, we can make our own organizational units.
+We can easily create new users in our new groups, as well as add new devices and groups for users depending on what clearance they have.
+We can then modify these group policies via ADDS > Tools > Group Policy Management.
+One should increase the security of these policies (more complex passwords, expiration dates, etc.)
+  Weak admin policies are more convenient but are a huge breach danger.
+Here, we can create a GPO by navigating to our new folder for this lab (or whatever folder you use).
+Since we want only computers on our domain to do things, we should remove authenticicated users and add the Domain Computers group.
+We can also edit the settings. COMPUTER settings are applied when workstations turn on, where USER settings apply when users login.
