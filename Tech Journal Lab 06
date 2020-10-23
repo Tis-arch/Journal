@@ -1,0 +1,9 @@
+With this new FS01, we gotta immediately connect it to the LAN.
+After making our info, we need to use sconfig.
+Edit the network settings to whatever you want before you even think trying to join the domain.
+Next, we move to AD. Download the feature. Under the add roles and features, select features. Go for the following.
+Remote Server Administration Tools > AD DS and AD LDS Tools > File Services Tools (cuz file services server) > File Server Resource Manager Tools
+This will allow you to modify the file server via the AD.
+Then, you must add it via the add server option by right clicking all servers. Search the server name and connect it.
+While I am doing my own assignment, you can use netsh advfirewall firewall set rule group=”Remote File Server Resource Manager Management” new enable=yes to remotely set rules on the file server.
+
