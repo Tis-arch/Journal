@@ -1,0 +1,6 @@
+So in this lab I effectively learned how to make a DHCP on the Active Directory.
+Firstly, you need to download (via the Add Roles and Features) the DHCP Server, Remote Server Administration Tools, and the DHCP Server tools.
+Make sure to set them up for the FS01 server.
+In the DHCP, right click IPv4 and add a new scope. Insert the necessary settings.
+Release and renew on your workstation.
+IF YOU GET A PRIVATE IP NOT IN THE RANGE THEN YOU MAY HAVE TO DELETE AND MAKE THE SCOPE AGAIN (that's what fixed it for me anyway).
