@@ -1,0 +1,3 @@
+After making sure you can technically access the domain, discover it on Linux.
+Use hostnamectl set-hostname nodename to make sure your name is set so the domain is alright with it.
+Then, realm join domainname.
