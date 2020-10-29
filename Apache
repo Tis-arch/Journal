@@ -1,0 +1,7 @@
+Starting this lab, we have to configure our web server. I'm using CentOS, where I can use nmtui or some equivalent.
+If starting fresh, remember to make a sudo user by making the user and adding usermod -aG wheel yourname.
+After ensuring the OS is set up properly, run sudo yum install httpd. This installs the web server package.
+Next, run sudo firewall-cmd --permanent --add-service=http or https, and reload the firewall. This allows Apache to allow http or https connections (can be both!)
+Start the web server with sudo systemctl start httpd and check status with sudo systemctl status httpd. You should find it running from that.
+To actually edit the page you've made, delete welcome.conf and create an html. I did sudo echo "This is deeeefinitely not a test. -John" > /var/www/html/index.html.
+/var/www/html is the path to any html you make.
